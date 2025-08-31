@@ -1,9 +1,12 @@
 {
+  "homepage": "https://ab438.github.io/Social-pp/",
   "name": "social-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -18,6 +21,7 @@
     "axios": "^1.11.0",
     "flowbite": "^3.1.2",
     "generate-react-cli": "^8.4.9",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-hook-form": "^7.62.0",

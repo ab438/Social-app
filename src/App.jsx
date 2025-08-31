@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
 import Layout from './Components/Layout/Layout';
 import Home from './Components/Home/Home';
@@ -16,7 +16,7 @@ import PostDetails from './Components/PostDetails/PostDetails';
 import { Toaster } from 'react-hot-toast';
 const query = new QueryClient()
 function App() {
-  let x = createBrowserRouter([
+  let x = createHashRouter([
     {path : "", element : <Layout/>, children : [
       {index : true, element : <Protectedpeoject><Home/></Protectedpeoject>},
       {path : 'profile', element : <Protectedpeoject><Profile/></Protectedpeoject>},
